@@ -289,7 +289,7 @@ ul {
   width: 270px;
   height: 120px;
   background-color: #f5f4fa;
-  background-size: 70px 70px;
+
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -521,7 +521,7 @@ ul {
 .logoclient {
   width: 170px;
   height: 90px;
-  border: 1px solid #AFB1B8;
+  border: 1px solid #afb1b8;
   border-radius: 4px;
 }
 .logoclient {
@@ -564,22 +564,22 @@ ul {
   /* display: block; */
 }
 .button.secondary {
+  display: flex;
   margin-top: 21px;
 
   margin-right: 0;
   margin-left: 464px;
 }
 .button.secondary::after {
-  display: block;  
+  display: block;
   content: "";
   background-image: url(../images/socialnetworks/iconsend.svg);
   width: 24px;
   height: 24px;
   margin-left: 10px;
   background-size: contain;
-  
+
   /* background-color: red; */
-  
 }
 .copyright {
   margin-top: 0;
@@ -598,36 +598,45 @@ ul {
 }
 /* Иконки */
 .envelope {
+  margin-right: 10px;
   width: 16px;
   height: 11px;
   fill: #757575;
 }
-.envelope:hover {
+.envelope:hover,
+.envelope:focus {
   fill: var(--accent-color);
 }
 .phone {
+  margin-right: 10px;
   width: 10px;
   height: 15px;
   fill: #757575;
 }
-.phone:hover {
+.phone:hover,
+.phone:focus {
   fill: var(--accent-color);
 }
-.instagram {
-  width: 44px;
-  height: 44px;
+.social-icons {
+  width: 20px;
+  height: 20px;
   fill: #afb1b8;
-  background-size: 20px 20px;
+  background-size: 44px 44px;
   background-color: blueviolet;
   background-repeat: no-repeat;
   border-radius: 50%;
-  back
+  background-position: center;
 }
-.instagram:hover {
-  display: inline-block;
+.instagram {
+  width: 20px;
+  height: 20px;
+}
+.instagram:hover,
+.instagram:focus {
+  /* display: inline-block; */
   fill: var(--white-color);
   background-color: var(--accent-color);
-  background-size: 44px;
+  background-size: 44px 44px;
   border-radius: 50%;
 }
 .twitter {
@@ -660,10 +669,17 @@ ul {
   background-color: var(--accent-color);
   background-size: 44px;
 }
+.socials-footer {
+  /* padding: 0;
+  border: none; */
+  width: 100px;
+  height: 100px;
+  color: #afb1b8;
+  border-radius: 50%;
+  background-color: red;
+}
 .instagram-footer {
-  width: 20px;
-  height: 20px;
-  fill: #afb1b8;
+  fill: currentColor;
 }
 .instagram-footer:hover {
   fill: var(--white-color);
@@ -671,8 +687,6 @@ ul {
   background-size: 44px;
 }
 .twitter-footer {
-  width: 20px;
-  height: 20px;
   fill: #afb1b8;
 }
 .twitter-footer:hover {
@@ -681,8 +695,6 @@ ul {
   background-size: 44px;
 }
 .facebook-footer {
-  width: 20px;
-  height: 20px;
   fill: #afb1b8;
 }
 .facebook-footer:hover {
@@ -691,8 +703,6 @@ ul {
   background-size: 44px;
 }
 .linkedin-footer {
-  width: 20px;
-  height: 20px;
   fill: #afb1b8;
 }
 .linkedin-footer:hover {
@@ -705,7 +715,8 @@ ul {
   height: 90px;
   fill: #afb1b8;
 }
-.icon-logo1:hover {
+.icon-logo1:hover,
+.icon-logo1:focus {
   fill: var(--accent-color);
 }
 .icon-logo2 {
